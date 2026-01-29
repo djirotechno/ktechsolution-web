@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - KTECHSOLUTION</title>
+    <meta name="description"
+        content="Boutique en ligne KTECHSOLUTION - Achetez nos devices IoT et solutions connectées">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="KTECHSOLUTION Logo" class="logo-img">
+                    <span class="logo-text">KTECHSOLUTION</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#produits" class="nav-link">Produits</a></li>
+                    <li><a href="boutique.html" class="nav-link active">Boutique</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="cart-icon" id="cartIcon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="container">
+            <div class="shop-hero-content">
+                <h1 class="shop-title">
+                    Notre <span class="gradient-text">Boutique IoT</span>
+                </h1>
+                <p class="shop-description">
+                    Découvrez notre gamme complète de devices IoT professionnels.
+                    Solutions LoRaWAN et 4G pour tous vos projets connectés.
+                </p>
+                <div class="shop-filters">
+                    <button class="filter-btn active" data-filter="all">Tous les produits</button>
+                    <button class="filter-btn" data-filter="lorawan">LoRaWAN</button>
+                    <button class="filter-btn" data-filter="4g">4G/LTE</button>
+                    <button class="filter-btn" data-filter="gateway">Gateways</button>
+                    <button class="filter-btn" data-filter="sensor">Capteurs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="shop-products">
+        <div class="container">
+            <div class="products-grid-shop">
+                <!-- Product 1 -->
+                <div class="product-item" data-category="lorawan sensor">
+                    <div class="product-badge-shop">LoRaWAN</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="2" opacity="0.2" />
+                            <circle cx="60" cy="60" r="35" stroke="currentColor" stroke-width="2" opacity="0.3" />
+                            <circle cx="60" cy="60" r="20" fill="currentColor" opacity="0.4" />
+                            <path d="M40 60 L50 60 M70 60 L80 60 M60 40 L60 50 M60 70 L60 80" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Capteur LoRaWAN Multi-usage</h3>
+                    <p class="product-short-desc">Température, Humidité, Pression</p>
+                    <div class="product-price">
+                        <span class="price-amount">45 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Portée 2-15 km</li>
+                        <li>✓ Batterie 5-10 ans</li>
+                        <li>✓ Étanche IP67</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item" data-category="lorawan sensor">
+                    <div class="product-badge-shop">LoRaWAN</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <rect x="30" y="30" width="60" height="60" rx="8" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="60" cy="50" r="8" fill="currentColor" opacity="0.4" />
+                            <rect x="45" y="65" width="30" height="3" fill="currentColor" opacity="0.4" />
+                            <rect x="45" y="72" width="30" height="3" fill="currentColor" opacity="0.4" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Station Météo LoRaWAN</h3>
+                    <p class="product-short-desc">8 paramètres environnementaux</p>
+                    <div class="product-price">
+                        <span class="price-amount">125 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Alimentation solaire</li>
+                        <li>✓ Multi-capteurs</li>
+                        <li>✓ Cloud ready</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item" data-category="lorawan gateway">
+                    <div class="product-badge-shop product-badge-popular">⭐ Populaire</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <rect x="25" y="40" width="70" height="50" rx="6" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="40" cy="60" r="5" fill="currentColor" opacity="0.5" />
+                            <circle cx="55" cy="60" r="5" fill="currentColor" opacity="0.5" />
+                            <circle cx="70" cy="60" r="5" fill="currentColor" opacity="0.5" />
+                            <rect x="35" y="75" width="50" height="2" fill="currentColor" opacity="0.4" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Gateway LoRaWAN Indoor</h3>
+                    <p class="product-short-desc">1000+ devices, 8 canaux</p>
+                    <div class="product-price">
+                        <span class="price-amount">285 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Plug & Play</li>
+                        <li>✓ Cloud intégré</li>
+                        <li>✓ Gestion à distance</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item" data-category="4g sensor">
+                    <div class="product-badge-shop">4G LTE</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <rect x="35" y="25" width="50" height="70" rx="8" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="60" cy="60" r="15" stroke="currentColor" stroke-width="2" opacity="0.4" />
+                            <path d="M50 50 L70 70 M70 50 L50 70" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Tracker GPS 4G</h3>
+                    <p class="product-short-desc">Suivi temps réel, géofencing</p>
+                    <div class="product-price">
+                        <span class="price-amount">65 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Précision 2.5m</li>
+                        <li>✓ Batterie 30 jours</li>
+                        <li>✓ Alertes SOS</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item" data-category="4g sensor">
+                    <div class="product-badge-shop">4G LTE</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <rect x="40" y="30" width="40" height="60" rx="4" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="60" cy="50" r="12" stroke="currentColor" stroke-width="2" opacity="0.4" />
+                            <rect x="50" y="70" width="20" height="3" fill="currentColor" opacity="0.4" />
+                            <rect x="50" y="77" width="20" height="3" fill="currentColor" opacity="0.4" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Compteur Intelligent 4G</h3>
+                    <p class="product-short-desc">Monitoring énergétique avec IA</p>
+                    <div class="product-price">
+                        <span class="price-amount">95 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Temps réel</li>
+                        <li>✓ Analyse IA</li>
+                        <li>✓ API REST</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item" data-category="4g sensor">
+                    <div class="product-badge-shop">4G LTE</div>
+                    <div class="product-image-shop">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                            <rect x="30" y="35" width="60" height="50" rx="6" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="60" cy="60" r="15" stroke="currentColor" stroke-width="2" opacity="0.4" />
+                            <circle cx="60" cy="60" r="8" fill="currentColor" opacity="0.5" />
+                            <rect x="45" y="30" width="30" height="5" fill="currentColor" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Caméra IoT 4G</h3>
+                    <p class="product-short-desc">1080p, IA embarquée</p>
+                    <div class="product-price">
+                        <span class="price-amount">155 000 FCFA</span>
+                    </div>
+                    <ul class="product-highlights">
+                        <li>✓ Vision nocturne</li>
+                        <li>✓ Détection IA</li>
+                        <li>✓ Audio bidirectionnel</li>
+                    </ul>
+                    <button class="btn btn-primary btn-add-cart">
+                        Ajouter au panier
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="shop-cta">
+        <div class="container">
+            <div class="cta-content glass-card">
+                <h2>Besoin d'une solution personnalisée ?</h2>
+                <p>Notre équipe peut concevoir des devices IoT sur mesure pour vos besoins spécifiques</p>
+                <a href="index.html#contact" class="btn btn-primary">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="KTECHSOLUTION Logo" class="logo-img">
+                        <span class="logo-text">KTECHSOLUTION</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Connecter l'Afrique à l'avenir de l'IoT
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#accueil">Accueil</a></li>
+                        <li><a href="index.html#apropos">À propos</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="boutique.html">Boutique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 contact@ktechsolution.com</li>
+                        <li>📱 +221 XX XXX XX XX</li>
+                        <li>📍 Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KTECHSOLUTION. Tous droits réservés.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay & Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here via JS -->
+            <div class="empty-cart-msg">Votre panier est vide</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalAmount">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="btnCheckout">Commander</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h3>Finaliser la commande</h3>
+                <button class="close-checkout" id="closeCheckout">&times;</button>
+            </div>
+            <form id="checkoutForm" class="checkout-form">
+                <!-- Step 1: Delivery Info -->
+                <div class="form-section">
+                    <h4>📍 Informations de livraison</h4>
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" required placeholder="Ex: Moussa Diop">
+                    </div>
+                    <div class="form-group">
+                        <label>Numéro de téléphone</label>
+                        <input type="tel" required placeholder="Ex: 77 000 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label>Adresse de livraison</label>
+                        <textarea required placeholder="Quartier, rue, indication..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 2: Payment Method -->
+                <div class="form-section">
+                    <h4>💳 Moyen de paiement</h4>
+                    <div class="payment-methods">
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="wave" checked>
+                            <span class="method-card wave">
+                                <span class="method-name">Wave</span>
+                            </span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="om">
+                            <span class="method-card om">
+                                <span class="method-name">Orange Money</span>
+                            </span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="card">
+                            <span class="method-card card">
+                                <span class="method-name">Carte Bancaire</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-footer">
+                    <div class="checkout-total">
+                        Total à payer: <span id="checkoutTotalAmount">0 FCFA</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Confirmer le paiement
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Shop page specific scripts
+        document.addEventListener('DOMContentLoaded', function () {
+            // Filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    productItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'flex';
+                        } else {
+                            const categories = item.getAttribute('data-category');
+                            if (categories.includes(filter)) {
+                                item.style.display = 'flex';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Add to cart functionality (simulation)
+           
+        });
+    </script>
+</body>
+
+</html>

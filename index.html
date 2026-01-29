@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KTECHSOLUTION - Solutions IoT innovantes pour l'agriculture, l'énergie, les villes intelligentes et la recherche en Afrique">
+    <title>KTECHSOLUTIONS | Solutions IoT en Afrique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="KTECHSOLUTION Logo" class="logo-img">
+                    <span class="logo-text">KTECHSOLUTIONS</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#produits" class="nav-link">Produits</a></li>
+                    <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <img src="assets/hero-banner.png" alt="IoT Solutions in Africa" class="hero-banner-image">
+            <div class="hero-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🌍</span>
+                    <span>Innovation IoT en Afrique</span>
+                </div>
+                <h1 class="hero-title">
+                    Transformez votre avenir avec
+                    <span class="gradient-text">l'Internet des Objets</span>
+                </h1>
+                <p class="hero-description">
+                    KTECHSOLUTIONS fournit des solutions IoT de pointe pour l'agriculture intelligente,
+                    l'énergie durable, les villes connectées et la recherche innovante à travers l'Afrique.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        Démarrer un projet
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        Nos services
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Capteurs déployés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Pays africains</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">À propos de nous</span>
+                <h2 class="section-title">Pionniers de l'IoT en Afrique</h2>
+                <p class="section-description">
+                    Nous sommes une startup africaine passionnée par la technologie et déterminée à
+                    révolutionner les secteurs clés grâce à l'Internet des Objets.
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Notre Mission</h3>
+                    <p>
+                        Démocratiser l'accès aux technologies IoT en Afrique pour créer des solutions
+                        durables et améliorer la qualité de vie des communautés.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">💡</div>
+                    <h3>Notre Vision</h3>
+                    <p>
+                        Devenir le leader africain de l'intégration IoT en connectant l'innovation
+                        technologique aux besoins réels du continent.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Nos Valeurs</h3>
+                    <p>
+                        Innovation, excellence, durabilité et impact social sont au cœur de chaque
+                        solution que nous développons.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos Références</span>
+                <h2 class="section-title">Ils nous font confiance</h2>
+                <p class="section-description">
+                    Des entreprises leaders en Afrique nous font confiance pour leurs projets IoT
+                </p>
+            </div>
+
+            <!-- Client Logos Carousel -->
+            <div class="clients-carousel-wrapper">
+                <div class="clients-carousel">
+                    <!-- First set of logos -->
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <rect x="5" y="12" width="90" height="26" rx="4" stroke="currentColor" stroke-width="2"
+                                    opacity="0.3" />
+                                <text x="50" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">SONATEL</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SONATEL</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <circle cx="25" cy="25" r="10" stroke="currentColor" stroke-width="2" opacity="0.3" />
+                                <text x="55" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">SENELEC</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SENELEC</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <path d="M15 25 L28 12 L28 38 Z" stroke="currentColor" stroke-width="2"
+                                    fill="currentColor" opacity="0.2" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">AGRITECH</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">AGRITECH</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <rect x="12" y="17" width="16" height="16" stroke="currentColor" stroke-width="2"
+                                    opacity="0.3" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="11"
+                                    font-weight="600">SMART CITY</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SMART CITY</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <circle cx="20" cy="25" r="7" fill="currentColor" opacity="0.3" />
+                                <circle cx="30" cy="25" r="7" fill="currentColor" opacity="0.5" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">ECOBANK</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">ECOBANK</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <path d="M15 30 L25 15 L35 30" stroke="currentColor" stroke-width="2" fill="none" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">TERANGA</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">TERANGA</p>
+                    </div>
+
+                    <!-- Duplicate set for infinite scroll -->
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <rect x="5" y="12" width="90" height="26" rx="4" stroke="currentColor" stroke-width="2"
+                                    opacity="0.3" />
+                                <text x="50" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">SONATEL</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SONATEL</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <circle cx="25" cy="25" r="10" stroke="currentColor" stroke-width="2" opacity="0.3" />
+                                <text x="55" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">SENELEC</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SENELEC</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <path d="M15 25 L28 12 L28 38 Z" stroke="currentColor" stroke-width="2"
+                                    fill="currentColor" opacity="0.2" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">AGRITECH</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">AGRITECH</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <rect x="12" y="17" width="16" height="16" stroke="currentColor" stroke-width="2"
+                                    opacity="0.3" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="11"
+                                    font-weight="600">SMART CITY</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">SMART CITY</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <circle cx="20" cy="25" r="7" fill="currentColor" opacity="0.3" />
+                                <circle cx="30" cy="25" r="7" fill="currentColor" opacity="0.5" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">ECOBANK</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">ECOBANK</p>
+                    </div>
+                    <div class="client-slide">
+                        <div class="client-logo">
+                            <svg width="100" height="50" viewBox="0 0 100 50" fill="none">
+                                <path d="M15 30 L25 15 L35 30" stroke="currentColor" stroke-width="2" fill="none" />
+                                <text x="60" y="30" text-anchor="middle" fill="currentColor" font-size="12"
+                                    font-weight="600">TERANGA</text>
+                            </svg>
+                        </div>
+                        <p class="client-name">TERANGA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-icon">✓</div>
+                    <div class="trust-text">
+                        <strong>100%</strong>
+                        <span>Satisfaction client</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <div class="trust-text">
+                        <strong>5 ans</strong>
+                        <span>D'expérience</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🌍</div>
+                    <div class="trust-text">
+                        <strong>15+</strong>
+                        <span>Pays africains</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-text">
+                        <strong>24/7</strong>
+                        <span>Support technique</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials-section">
+                <h3 class="testimonials-title">Ce qu'ils disent de nous</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "KTECHSOLUTION a transformé notre approche de l'agriculture. Grâce à leurs capteurs IoT,
+                            nous avons augmenté nos rendements de 35% tout en réduisant notre consommation d'eau."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="50" height="50" viewBox="0 0 50 50">
+                                    <circle cx="25" cy="25" r="24" fill="currentColor" opacity="0.2" />
+                                    <circle cx="25" cy="20" r="8" fill="currentColor" opacity="0.5" />
+                                    <path d="M10 45 Q25 35 40 45" fill="currentColor" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Amadou Diallo</div>
+                                <div class="author-position">Directeur Technique, AGRITECH</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Une équipe professionnelle et réactive. Leur solution de monitoring énergétique nous a
+                            permis
+                            d'optimiser notre consommation et de réaliser des économies significatives."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="50" height="50" viewBox="0 0 50 50">
+                                    <circle cx="25" cy="25" r="24" fill="currentColor" opacity="0.2" />
+                                    <circle cx="25" cy="20" r="8" fill="currentColor" opacity="0.5" />
+                                    <path d="M10 45 Q25 35 40 45" fill="currentColor" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Fatou Sow</div>
+                                <div class="author-position">Responsable Infrastructure, SENELEC</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "KTECHSOLUTION nous accompagne depuis 3 ans sur nos projets de ville intelligente.
+                            Leur expertise IoT et leur connaissance du contexte africain sont incomparables."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="50" height="50" viewBox="0 0 50 50">
+                                    <circle cx="25" cy="25" r="24" fill="currentColor" opacity="0.2" />
+                                    <circle cx="25" cy="20" r="8" fill="currentColor" opacity="0.5" />
+                                    <path d="M10 45 Q25 35 40 45" fill="currentColor" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Moussa Ndiaye</div>
+                                <div class="author-position">Chef de Projet, SMART CITY Dakar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos Services</span>
+                <h2 class="section-title">Solutions IoT sur mesure</h2>
+                <p class="section-description">
+                    Nous intégrons des systèmes IoT intelligents adaptés à vos besoins spécifiques
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌾</div>
+                    <h3>Agriculture Intelligente</h3>
+                    <p>
+                        Optimisez vos rendements avec des capteurs de sol, des systèmes d'irrigation
+                        automatisés et le monitoring en temps réel de vos cultures.
+                    </p>
+                    <ul class="service-features">
+                        <li>Capteurs d'humidité et température</li>
+                        <li>Irrigation automatisée</li>
+                        <li>Analyse prédictive des récoltes</li>
+                        <li>Gestion des ressources en eau</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Énergie & Monitoring</h3>
+                    <p>
+                        Surveillez et optimisez votre consommation énergétique avec des solutions
+                        de monitoring intelligent et de gestion de l'énergie.
+                    </p>
+                    <ul class="service-features">
+                        <li>Compteurs intelligents</li>
+                        <li>Monitoring de consommation</li>
+                        <li>Intégration solaire IoT</li>
+                        <li>Alertes en temps réel</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏙️</div>
+                    <h3>Villes Intelligentes</h3>
+                    <p>
+                        Créez des villes connectées avec des solutions d'éclairage intelligent,
+                        de gestion des déchets et de surveillance environnementale.
+                    </p>
+                    <ul class="service-features">
+                        <li>Éclairage public intelligent</li>
+                        <li>Gestion des déchets</li>
+                        <li>Qualité de l'air</li>
+                        <li>Parking intelligent</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Collecte de Données</h3>
+                    <p>
+                        Déployez des réseaux de capteurs pour collecter, analyser et visualiser
+                        vos données en temps réel avec nos plateformes cloud.
+                    </p>
+                    <ul class="service-features">
+                        <li>Réseaux de capteurs</li>
+                        <li>Plateformes cloud</li>
+                        <li>Tableaux de bord personnalisés</li>
+                        <li>API d'intégration</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Recherche & Innovation</h3>
+                    <p>
+                        Accompagnement de projets de recherche avec des solutions IoT personnalisées
+                        pour l'acquisition et l'analyse de données scientifiques.
+                    </p>
+                    <ul class="service-features">
+                        <li>Capteurs scientifiques</li>
+                        <li>Acquisition de données</li>
+                        <li>Protocoles personnalisés</li>
+                        <li>Support technique dédié</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div class="service-card service-card-highlight">
+                    <div class="service-icon">🚀</div>
+                    <h3>Solutions Personnalisées</h3>
+                    <p>
+                        Votre projet est unique ? Nous concevons des solutions IoT sur mesure
+                        adaptées à vos besoins spécifiques et votre secteur d'activité.
+                    </p>
+                    <ul class="service-features">
+                        <li>Consultation gratuite</li>
+                        <li>Conception sur mesure</li>
+                        <li>Développement agile</li>
+                        <li>Support continu</li>
+                    </ul>
+                    <div class="service-link">
+                        <a href="#contact">Contactez-nous →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos Produits</span>
+                <h2 class="section-title">Devices IoT Professionnels</h2>
+                <p class="section-description">
+                    Découvrez notre gamme de dispositifs IoT de haute qualité pour vos projets de connectivité
+                </p>
+            </div>
+            <div class="products-grid">
+                <!-- LoRaWAN Devices -->
+                <div class="product-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">📡</span>
+                        Devices LoRaWAN
+                    </h3>
+                    <div class="products-list">
+                        <div class="product-card glass-card">
+                            <div class="product-badge">Longue portée</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <circle cx="40" cy="40" r="30" stroke="currentColor" stroke-width="2"
+                                        opacity="0.3" />
+                                    <circle cx="40" cy="40" r="20" stroke="currentColor" stroke-width="2"
+                                        opacity="0.5" />
+                                    <circle cx="40" cy="40" r="10" fill="currentColor" />
+                                    <path d="M40 10 L40 30 M40 50 L40 70 M10 40 L30 40 M50 40 L70 40"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h4>Capteur LoRaWAN Multi-usage</h4>
+                            <p class="product-description">
+                                Capteur polyvalent avec connectivité LoRaWAN pour une portée jusqu'à 15 km en zone
+                                rurale.
+                                Idéal pour l'agriculture et les villes intelligentes.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Portée:</strong> 2-15 km</li>
+                                <li><strong>Batterie:</strong> 5-10 ans</li>
+                                <li><strong>Fréquence:</strong> 868 MHz (EU)</li>
+                                <li><strong>Capteurs:</strong> Température, Humidité, Pression</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">Faible consommation</span>
+                                <span class="feature-tag">Étanche IP67</span>
+                                <span class="feature-tag">-40°C à +85°C</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+
+                        <div class="product-card glass-card">
+                            <div class="product-badge">Agriculture</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect x="20" y="20" width="40" height="40" rx="8" stroke="currentColor"
+                                        stroke-width="2" opacity="0.3" />
+                                    <path d="M30 40 L40 50 L50 30" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="35" cy="25" r="3" fill="currentColor" />
+                                    <circle cx="45" cy="25" r="3" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h4>Station Météo LoRaWAN</h4>
+                            <p class="product-description">
+                                Station météorologique complète avec transmission LoRaWAN. Parfaite pour le monitoring
+                                agricole et environnemental en temps réel.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Portée:</strong> Jusqu'à 10 km</li>
+                                <li><strong>Alimentation:</strong> Solaire + Batterie</li>
+                                <li><strong>Mesures:</strong> 8 paramètres</li>
+                                <li><strong>Intervalle:</strong> Configurable (5-60 min)</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">Solaire</span>
+                                <span class="feature-tag">Multi-capteurs</span>
+                                <span class="feature-tag">Cloud ready</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+
+                        <div class="product-card glass-card">
+                            <div class="product-badge product-badge-popular">Populaire</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <path d="M40 15 L50 35 L70 35 L55 48 L60 68 L40 55 L20 68 L25 48 L10 35 L30 35 Z"
+                                        stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2" />
+                                </svg>
+                            </div>
+                            <h4>Gateway LoRaWAN Indoor</h4>
+                            <p class="product-description">
+                                Passerelle LoRaWAN 8 canaux pour déploiement intérieur. Connecte jusqu'à 1000 capteurs
+                                et transmet les données vers le cloud via Ethernet ou WiFi.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Canaux:</strong> 8 canaux simultanés</li>
+                                <li><strong>Capacité:</strong> 1000+ devices</li>
+                                <li><strong>Connectivité:</strong> Ethernet, WiFi, 4G (option)</li>
+                                <li><strong>Couverture:</strong> 2 km (urbain)</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">Plug & Play</span>
+                                <span class="feature-tag">Cloud intégré</span>
+                                <span class="feature-tag">Gestion à distance</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4G/LTE Devices -->
+                <div class="product-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">📶</span>
+                        Devices 4G/LTE
+                    </h3>
+                    <div class="products-list">
+                        <div class="product-card glass-card">
+                            <div class="product-badge">Temps réel</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect x="25" y="15" width="30" height="50" rx="4" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <rect x="30" y="20" width="20" height="35" fill="currentColor" opacity="0.2" />
+                                    <circle cx="40" cy="60" r="2" fill="currentColor" />
+                                    <path d="M35 25 L45 25 M35 30 L45 30 M35 35 L42 35" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <h4>Tracker GPS 4G</h4>
+                            <p class="product-description">
+                                Traceur GPS haute précision avec connectivité 4G LTE. Idéal pour le suivi de véhicules,
+                                d'équipements et de marchandises en temps réel.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Précision GPS:</strong> 2.5m CEP</li>
+                                <li><strong>Réseau:</strong> 4G LTE Cat-M1/NB-IoT</li>
+                                <li><strong>Batterie:</strong> 3000 mAh (30 jours)</li>
+                                <li><strong>Mise à jour:</strong> 10s à 24h (configurable)</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">Géofencing</span>
+                                <span class="feature-tag">Alertes SOS</span>
+                                <span class="feature-tag">Étanche</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+
+                        <div class="product-card glass-card">
+                            <div class="product-badge">Énergie</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <rect x="20" y="25" width="40" height="30" rx="4" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M35 35 L40 40 L35 45 M45 35 L40 40 L45 45" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <rect x="35" y="20" width="10" height="5" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h4>Compteur Intelligent 4G</h4>
+                            <p class="product-description">
+                                Compteur d'énergie intelligent avec transmission 4G. Monitoring en temps réel de la
+                                consommation électrique avec alertes et analyse prédictive.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Mesure:</strong> Monophasé/Triphasé</li>
+                                <li><strong>Précision:</strong> Classe 1 (IEC 62053-21)</li>
+                                <li><strong>Connectivité:</strong> 4G LTE + Modbus RTU</li>
+                                <li><strong>Affichage:</strong> LCD rétroéclairé</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">Temps réel</span>
+                                <span class="feature-tag">Analyse IA</span>
+                                <span class="feature-tag">API REST</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+
+                        <div class="product-card glass-card">
+                            <div class="product-badge">Surveillance</div>
+                            <div class="product-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <circle cx="40" cy="35" r="15" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="40" cy="35" r="8" fill="currentColor" opacity="0.3" />
+                                    <path d="M30 48 L30 60 L50 60 L50 48" stroke="currentColor" stroke-width="2" />
+                                    <rect x="35" y="60" width="10" height="5" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h4>Caméra IoT 4G</h4>
+                            <p class="product-description">
+                                Caméra de surveillance intelligente avec IA et connectivité 4G. Détection de mouvement,
+                                vision nocturne et streaming vidéo en temps réel.
+                            </p>
+                            <ul class="product-specs">
+                                <li><strong>Résolution:</strong> 1080p Full HD</li>
+                                <li><strong>Vision:</strong> Nocturne IR 20m</li>
+                                <li><strong>IA:</strong> Détection personnes/véhicules</li>
+                                <li><strong>Stockage:</strong> Cloud + SD 128GB</li>
+                            </ul>
+                            <div class="product-features">
+                                <span class="feature-tag">IA embarquée</span>
+                                <span class="feature-tag">Audio bidirectionnel</span>
+                                <span class="feature-tag">IP66</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="products-cta">
+                <div class="cta-card glass-card">
+                    <h3>Besoin d'une solution personnalisée ?</h3>
+                    <p>
+                        Notre équipe peut concevoir et fabriquer des devices IoT sur mesure adaptés à vos besoins
+                        spécifiques.
+                        Contactez-nous pour discuter de votre projet.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">
+                        Discuter de mon projet
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contactez-nous</span>
+                    <h2 class="section-title">Démarrons votre projet IoT</h2>
+                    <p class="contact-description">
+                        Prêt à transformer votre activité avec l'IoT ? Notre équipe d'experts est
+                        là pour vous accompagner de la conception à la mise en œuvre.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">contact@ktechsolution.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <div class="contact-label">Téléphone</div>
+                                <div class="contact-value">+221 XX XXX XX XX</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <div class="contact-label">Localisation</div>
+                                <div class="contact-value">Dakar, Sénégal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+221 XX XXX XX XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="agriculture">Agriculture Intelligente</option>
+                            <option value="energie">Énergie & Monitoring</option>
+                            <option value="ville">Villes Intelligentes</option>
+                            <option value="data">Collecte de Données</option>
+                            <option value="recherche">Recherche & Innovation</option>
+                            <option value="custom">Solution Personnalisée</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            placeholder="Décrivez votre projet..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Envoyer le message
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 2.5L8.75 11.25M17.5 2.5L12.5 17.5L8.75 11.25M17.5 2.5L2.5 7.5L8.75 11.25"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="KTECHSOLUTION Logo" class="logo-img">
+                        <span class="logo-text">KTECHSOLUTIONS</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Solutions IoT innovantes pour l'Afrique de demain
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Agriculture</a></li>
+                            <li><a href="#services">Énergie</a></li>
+                            <li><a href="#services">Villes Intelligentes</a></li>
+                            <li><a href="#services">Recherche</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#apropos">À propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Carrières</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suivez-nous</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KTECHSOLUTIONS. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

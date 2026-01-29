@@ -1,0 +1,163 @@
+
+ <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KTECHSOLUTION - Solutions IoT innovantes pour l'agriculture, l'énergie, les villes intelligentes et la recherche en Afrique">
+    <title>KTECHSOLUTIONS | Solutions IoT en Afrique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="KTECHSOLUTION Logo" class="logo-img">
+                    <span class="logo-text">KTECHSOLUTIONS</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#produits" class="nav-link">Produits</a></li>
+                    <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+ 
+ 
+ 
+ 
+ <!-- Cart Overlay & Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here via JS -->
+            <div class="empty-cart-msg">Votre panier est vide</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalAmount">0 FCFA</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="btnCheckout">Commander</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h3>Finaliser la commande</h3>
+                <button class="close-checkout" id="closeCheckout">&times;</button>
+            </div>
+            <form id="checkoutForm" class="checkout-form">
+                <!-- Step 1: Delivery Info -->
+                <div class="form-section">
+                    <h4>📍 Informations de livraison</h4>
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" required placeholder="Ex: Moussa Diop">
+                    </div>
+                    <div class="form-group">
+                        <label>Numéro de téléphone</label>
+                        <input type="tel" required placeholder="Ex: 77 000 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label>Adresse de livraison</label>
+                        <textarea required placeholder="Quartier, rue, indication..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 2: Payment Method -->
+                <div class="form-section">
+                    <h4>💳 Moyen de paiement</h4>
+                    <div class="payment-methods">
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="wave" checked>
+                            <span class="method-card wave">
+                                <span class="method-name">Wave</span>
+                            </span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="om">
+                            <span class="method-card om">
+                                <span class="method-name">Orange Money</span>
+                            </span>
+                        </label>
+                        <label class="payment-method">
+                            <input type="radio" name="payment" value="card">
+                            <span class="method-card card">
+                                <span class="method-name">Carte Bancaire</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-footer">
+                    <div class="checkout-total">
+                        Total à payer: <span id="checkoutTotalAmount">0 FCFA</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Confirmer le paiement
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script>
+     const addCartBtns = document.querySelectorAll('.btn-add-cart');
+            addCartBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const productName = this.closest('.product-item').querySelector('.product-name').textContent;
+
+                    // Show notification
+                    const notification = document.createElement('div');
+                    notification.className = 'cart-notification';
+                    notification.textContent = `✓ ${productName} ajouté au panier !`;
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 100px;
+                        right: 20px;
+                        background: linear-gradient(135deg, #2abb9b, #1a8f7a);
+                        color: white;
+                        padding: 15px 25px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 20px rgba(42, 187, 155, 0.3);
+                        z-index: 10000;
+                        animation: slideIn 0.3s ease;
+                    `;
+                    document.body.appendChild(notification);
+
+                    setTimeout(() => {
+                        notification.style.animation = 'slideOut 0.3s ease';
+                        setTimeout(() => notification.remove(), 300);
+                    }, 2000);
+                });
+            });
+</script>
+</body>
